@@ -198,7 +198,7 @@ class SurveyResponsesApi(object):
             params[key] = val
         del params['kwargs']
 
-        if self.api_client.client_side_validation and ('limit' in params and params['limit'] > 500):  # noqa: E501
+        if self.api_client.client_side_validation and ('limit' in params and params['limit'] > 5000):  # noqa: E501
             raise ValueError("Invalid value for parameter `limit` when calling `deletes_survey_responses`, must be a value less than or equal to `500`")  # noqa: E501
         if self.api_client.client_side_validation and ('limit' in params and params['limit'] < 0):  # noqa: E501
             raise ValueError("Invalid value for parameter `limit` when calling `deletes_survey_responses`, must be a value greater than or equal to `0`")  # noqa: E501
@@ -339,7 +339,7 @@ class SurveyResponsesApi(object):
             params[key] = val
         del params['kwargs']
 
-        if self.api_client.client_side_validation and ('limit' in params and params['limit'] > 500):  # noqa: E501
+        if self.api_client.client_side_validation and ('limit' in params and params['limit'] > 5000):  # noqa: E501
             raise ValueError("Invalid value for parameter `limit` when calling `get_survey_responses`, must be a value less than or equal to `500`")  # noqa: E501
         if self.api_client.client_side_validation and ('limit' in params and params['limit'] < 0):  # noqa: E501
             raise ValueError("Invalid value for parameter `limit` when calling `get_survey_responses`, must be a value greater than or equal to `0`")  # noqa: E501
